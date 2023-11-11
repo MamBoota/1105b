@@ -1,5 +1,7 @@
 :root {
-    --top-color: #2000E7;
+    --blue-color: #2000E7;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
     --unit: 1px;
 }
 
@@ -111,7 +113,6 @@ body {
 }
 
 /* <header> */
-
 /* <main> */
 /* <section block 1> */
 .block_1 {
@@ -124,7 +125,6 @@ body {
 
 .block_1 .text {
     position: absolute;
-    /* top: 318px; */
     top: 201px;
     left: 78px;
 }
@@ -144,7 +144,7 @@ body {
     font-size: 30px;
     line-height: 45px;
 
-    color: var(--top-color);
+    color: var(--blue-color);
 }
 
 .block_1 .text h2 {
@@ -156,7 +156,7 @@ body {
     font-size: 48px;
     line-height: 72px;
 
-    color: var(--top-color);
+    color: var(--blue-color);
 }
 
 .block_1 .text h2 span {
@@ -179,36 +179,50 @@ body {
 
 .block_1 .button {
     position: absolute;
-    top: 488px;
+    top: 599px;
 }
 
-.block_1 .bm1 {
-    margin: 111px 35px 0px 65px;
-}
+.block_1 .button * {
+    width: 246px;
+    height: 72px;
 
-.block_1 .text_bm1 {
-    width: 466px;
-    height: 36px;
-    position: absolute;
-    margin: 129px 0px 0px 160px;
+    border-radius: 10px;
+
+    box-shadow: 11px 21px 15px rgb(0, 0, 0, 0.25);
 
     font-family: "Poppins-Regular", sans-serif;
     font-size: 24px;
     line-height: 36px;
-
-    color: #FFFFFF;
 }
 
-.block_1 .text_bm1 span {
-    width: 123px;
-    height: 36px;
-    margin: 0px 0px 0px 220px;
+.block_1 .button .bm1 {
+    position: relative;
+    left: 77px;
 
-    font-family: "Poppins-Regular", sans-serif;
-    font-size: 24px;
-    line-height: 36px;
+    background-color: var(--blue-color);
 
-    color: var(--top-color);
+    color: var(--white-color);
+}
+
+.block_1 .button .bm1:active {
+    background-color: #FFCA00;
+
+    color: var(--black-color);
+}
+
+.block_1 .button .bm2 {
+    position: relative;
+    left: 150px;
+
+    background-color: transparent;
+
+    color: var(--blue-color);
+}
+
+.block_1 .button .bm2:active {
+    background-color: var(--black-color);
+
+    color: #FFCA00;
 }
 
 /* <section block 1> */
@@ -234,21 +248,7 @@ body {
     line-height: 72px;
     letter-spacing: 0.35em;
 
-    color: var(--top-color);
-}
-
-.block_2 h2 {
-    position: absolute;
-    width: 95px;
-    height: 36px;
-    padding: 0px;
-    margin: 639px 0px 0px 153px;
-
-    font-family: "Poppins-Regular", sans-serif;
-    font-size: 24px;
-    line-height: 36px;
-
-    color: #FFFFFF;
+    color: var(--blue-color);
 }
 
 .block_2 p {
@@ -262,11 +262,32 @@ body {
     font-size: 24px;
     line-height: 36px;
 
-    color: #000000;
+    color: var(--black-color);
 }
 
 .block_2 .bm1 {
+    position: relative;
+    width: 246px;
+    height: 72px;
     margin: 621px 0px 0px 67px;
+
+    border-radius: 10px;
+
+    box-shadow: 11px 21px 15px rgb(0, 0, 0, 0.25);
+
+    background-color: var(--blue-color);
+
+    font-family: "Poppins-Regular", sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: var(--white-color);
+}
+
+.block_2 .bm1:active {
+    background-color: #FFCA00;
+
+    color: var(--black-color);
 }
 
 .block_2 .img11 {
@@ -312,7 +333,7 @@ body {
     font-size: 24px;
     line-height: 36px;
 
-    color: #000000;
+    color: var(--black-color);
 }
 
 .projects * {
@@ -379,7 +400,7 @@ body {
     line-height: 96px;
     letter-spacing: 0.27em;
 
-    color: var(--top-color);
+    color: var(--blue-color);
 }
 
 .block_4 p {
@@ -393,73 +414,84 @@ body {
     font-size: 24px;
     line-height: 36px;
 
-    color: #000000;
+    color: var(--black-color);
 }
 
 .block_4 .input * {
     position: absolute;
 
     font-family: "Poppins-Regular", sans-serif;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 32px;
+    line-height: 48px;
 
-    color: #000000;
+    color: var(--black-color);
 }
 
-.block_4 .email,
-.block_4 .password,
-.block_4 .message {
+.block_4 .email_form,
+.block_4 .password_form,
+.block_4 #message_form {
     left: 66px;
 }
 
-.block_4 .email {
+.block_4 .email_form {
+    width: 649px;
+    height: 92px;
     top: 159px;
+
+    border: none;
+
+    box-shadow: 13px 21px 4px rgb(0, 0, 0, 0.25);
+
+    background-color: var(--white-color);
 }
 
-.block_4 .password {
+.block_4 .password_form {
+    resize: none;
+    width: 649px;
+    height: 92px;
     top: 334px;
+
+    border: none;
+
+    box-shadow: 13px 21px 4px rgb(0, 0, 0, 0.25);
+
+    background-color: var(--white-color);
 }
 
-.block_4 .message {
+.block_4 #message_form {
+    width: 649px;
+    height: 265px;
     top: 509px;
+
+    border: none;
+
+    box-shadow: 13px 21px 4px rgb(0, 0, 0, 0.25);
+
+    background-color: var(--white-color);
 }
 
 .block_4 .contact {
+    width: 327px;
+    height: 94px;
     top: 823px;
     left: 230px;
+
+    border: none;
+
+    background-color: var(--white-color);
+
+    box-shadow: 13px 21px 4px rgb(0, 0, 0, 0.25);
+}
+
+.block_4 .contact:active {
+    background-color: var(--black-color);
+
+    color: var(--white-color);
 }
 
 .block_4 .saly_13 {
     top: -22px;
     left: 584px;
-}
-
-.block_4 .email_text {
-    width: 87px;
-    height: 48px;
-    top: 174px;
-    left: 121px;
-}
-
-.block_4 .password_text {
-    width: 154px;
-    height: 48px;
-    top: 349px;
-    left: 121px;
-}
-
-.block_4 .message_text {
-    width: 158px;
-    height: 48px;
-    top: 524px;
-    left: 114px;
-}
-
-.block_4 .contact_text {
-    width: 131px;
-    height: 48px;
-    top: 838px;
-    left: 332px;
 }
 
 /* <section block 4> */
@@ -526,7 +558,7 @@ body {
     font-size: 31px;
     line-height: 44.8px;
 
-    color: #000000;
+    color: var(--black-color);
 }
 
 .footer .header .item_1 {
@@ -566,31 +598,40 @@ body {
     font-size: 31px;
     line-height: 44.8px;
 
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
-.body .email {
+.body .email_form {
     width: 323px;
     height: 97px;
     left: 26px;
+
+    border-radius: 30px;
+    border: none;
+
+    background-color: var(--black-color);
+
+    color: var(--white-color);
 }
 
-.body .email_text {
-    width: 78px;
-    height: 45px;
-    left: 59px;
-}
-
-.body .subscribe_img {
+.body .subscribe_b {
     width: 178px;
-    height: 97px;
+    height: 99px;
     left: 288px;
+    margin: 50px 0px 0px 0px;
+
+    border-radius: 30px;
+    border: none;
+
+    background-color: #F965FC;
+
+    color: var(--white-color);
 }
 
-.body .subscribe_text {
-    width: 145px;
-    height: 45px;
-    left: 305px;
+.body .subscribe_b:active {
+    background-color: #E6FF65;
+
+    color: var(--black-color);
 }
 
 .body .platform,
@@ -600,7 +641,7 @@ body {
     font-size: 31px;
     line-height: 44.8px;
 
-    color: #000000;
+    color: var(--black-color);
 }
 
 .body ul {
@@ -660,7 +701,7 @@ hr {
     align-items: center;
     width: 1334px;
 
-    color: #000000;
+    color: var(--black-color);
 }
 
 /* <div hr> */
@@ -685,7 +726,7 @@ hr {
     font-size: 32px;
     line-height: 46.24px;
 
-    color: #000000;
+    color: var(--black-color);
 }
 
 .signature .social-vertical {
