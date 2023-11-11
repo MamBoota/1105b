@@ -27,14 +27,21 @@
     src: url("../font-family/Jost/static/Jost-Bold.ttf");
 }
 
-body {
+.container {
+    margin: 0px auto;
     width: 1440px;
+}
+
+body {
+    width: 100vw;
+    height: 100vw;
     margin: 0;
     padding: 0;
 }
 
 /* <header> */
 .header {
+    width: 1440px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -108,6 +115,7 @@ body {
 /* <main> */
 /* <section block 1> */
 .block_1 {
+    position: relative;
     width: 1440px;
     height: 949px;
     margin: 0;
@@ -116,7 +124,8 @@ body {
 
 .block_1 .text {
     position: absolute;
-    top: 318px;
+    /* top: 318px; */
+    top: 201px;
     left: 78px;
 }
 
@@ -127,7 +136,7 @@ body {
 }
 
 .block_1 .text h1 {
-    width: 372px;
+    width: 380px;
     height: 45px;
     margin: 0px 0px 5px 0px;
 
@@ -170,15 +179,11 @@ body {
 
 .block_1 .button {
     position: absolute;
-    top: 605px;
+    top: 488px;
 }
 
 .block_1 .bm1 {
     margin: 111px 35px 0px 65px;
-}
-
-.block_1 .text_bm1 {
-    position: absolute;
 }
 
 .block_1 .text_bm1 {
@@ -234,7 +239,7 @@ body {
 
 .block_2 h2 {
     position: absolute;
-    width: 89px;
+    width: 95px;
     height: 36px;
     padding: 0px;
     margin: 639px 0px 0px 153px;
@@ -671,7 +676,7 @@ hr {
 }
 
 .signature .copyRighted {
-    width: 670px;
+    width: 640px;
     height: 46px;
     margin: 0px 0px 0px 46px;
     padding: 0;
@@ -683,7 +688,7 @@ hr {
     color: #000000;
 }
 
-.signature .social-horizontal {
+.signature .social-vertical {
     display: flex;
     justify-content: space-between;
 
