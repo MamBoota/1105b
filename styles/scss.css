@@ -29,11 +29,6 @@
     src: url("../font-family/Jost/static/Jost-Bold.ttf");
 }
 
-.container {
-    margin: 0px auto;
-    width: 1440px;
-}
-
 body {
     width: 100vw;
     height: 100vw;
@@ -97,7 +92,7 @@ body {
 .header .item_2:hover,
 .header .item_3:hover,
 .header .item_4:hover {
-    color: #F965FC;
+    color: #F2BD00;
 }
 
 .header .item_1 {
