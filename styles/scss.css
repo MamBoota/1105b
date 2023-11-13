@@ -75,10 +75,7 @@ body {
     padding: 0;
 }
 
-.header .item_1,
-.header .item_2,
-.header .item_3,
-.header .item_4 {
+.header a {
     height: 45px;
 
     font-family: "Poppins-Regular", sans-serif;
@@ -88,10 +85,7 @@ body {
     color: #686565;
 }
 
-.header .item_1:hover,
-.header .item_2:hover,
-.header .item_3:hover,
-.header .item_4:hover {
+.header a:hover {
     color: #F2BD00;
 }
 
