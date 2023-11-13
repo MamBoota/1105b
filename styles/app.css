@@ -88,8 +88,16 @@ body {
 
     font-family: "Poppins-Regular", sans-serif;
     font-size: 30px;
+    text-decoration: none;
 
     color: #686565;
+}
+
+.header .item_1:hover,
+.header .item_2:hover,
+.header .item_3:hover,
+.header .item_4:hover {
+    color: #F965FC;
 }
 
 .header .item_1 {
